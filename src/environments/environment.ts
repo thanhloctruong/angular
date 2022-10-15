@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api: {
+    host: 'http://192.168.10.247:8088',
+    prefix: 'api',
+    version: 'v1',
+  },
+  jwt: {
+    prefix: 'Bearer',
+    accessTokenKey: 'ACCESS_TOKEN_KEY',
+    refreshTokenKey: 'REFRESH_TOKEN_KEY',
+  },
 };
 
 /*
